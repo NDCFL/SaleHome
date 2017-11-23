@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="ldimgPackage" namespace="/ld" extends="basePackage">
+    	<action name="*" class="louDongAction" method="{1}">
+    		<result name="loudonglist">/hui-jxs/ldlist.jsp</result>
+    		<result name="loupanlist">/hui-jxs/loudong-add.jsp</result>
+    		<result name="showloudong">/hui-jxs/loudong-show.jsp</result>
+    		<result name="updateldstatus">/hui-jxs/ldlist.jsp</result>
+    		<result name="deleteld">/hui-jxs/ldlist.jsp</result>
+    		<result name="addloudong">/hui-jxs/ldlist.jsp</result>
+    		<result name="pageloudong">/hui-jxs/ldlist.jsp</result>
+    		<result name="deletemanyloudong">/hui-jxs/ldlist.jsp</result>
+    		<result name="updateloudong">/hui-jxs/loudong-update.jsp</result>
+    	</action>
+    </package>
+</struts>

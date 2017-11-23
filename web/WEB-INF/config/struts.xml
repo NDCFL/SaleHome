@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.i18n.reload" value="false" />
+    <constant name="struts.configuration.xml.reload" value="false" />
+    <constant name="struts.multipart.maxSize" value="104857600" />
+    <constant name="struts.action.extension" value="action,do," />
+    <constant name="struts.objectFactory" value="spring" />
+
+    <package name="basePackage" extends="json-default">
+    </package>
+    <include file="../config/struts-login-regirest.xml"></include>
+    <include file="../config/struts-loupan.xml"></include>
+    <include file="../config/struts-loupanimg.xml"></include>
+    <include file="../config/struts-loudong.xml"></include>
+    <include file="../config/struts-house.xml"></include>
+    <include file="../config/struts-room.xml"></include>
+    <include file="../config/struts-tagney.xml"></include>
+    <include file="../config/struts-user.xml"></include>
+    <include file="../config/struts-manager.xml"></include>
+    <include file="../config/struts-employee.xml"></include>
+    <include file="../config/struts-wz.xml"></include>
+    <include file="../config/struts-articletype.xml"></include>
+    <include file="../config/struts-facemain.xml"></include>
+    <include file="../config/struts-customer.xml"></include>
+    <include file="../config/struts-sale.xml"></include>
+    <include file="../config/struts-history.xml"></include>
+    <include file="../config/struts-like.xml"></include>
+    <include file="../config/struts-comment.xml"></include>
+    <include file="../config/struts-appointment.xml"></include>
+    <include file="../config/struts-page.xml"></include>
+    <include file="../config/struts-mission.xml"></include>
+    <include file="../config/struts-userprize.xml"></include>
+    <include file="../config/struts-activity.xml"></include>
+    <include file="../config/struts-getprize.xml"></include>
+</struts>

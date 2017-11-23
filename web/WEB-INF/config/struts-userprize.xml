@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="userprizePackage" namespace="/userprize" extends="basePackage">
+    	<action name="*" class="userPrizeAction" method="{1}">
+    		<result name="pageuserprize">/hui-jxs/userprize-list.jsp</result>
+    		<result name="mysumsalary">/hui-jxs/employee-salary.jsp</result>
+    		<result name="quentitysalary">/hui-jxs/employee-quentitysalary.jsp</result>
+    	</action>
+    </package>
+</struts>

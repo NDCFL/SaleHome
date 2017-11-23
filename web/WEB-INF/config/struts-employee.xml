@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="ygPackage" namespace="/yg" extends="basePackage">
+    	<action name="*" class="employeeAction" method="{1}">
+    		<result name="employeelist">/hui-jxs/employee-list.jsp</result>
+    		<result name="showemployee">/hui-jxs/employee-show.jsp</result>
+    		<result name="updateemployeestatus">/hui-jxs/employee-show.jsp</result>
+    		<result name="deleteemployee">/hui-jxs/employee-list.jsp</result>
+    		<result name="pageemployee">/hui-jxs/employee-list.jsp</result>
+    		<result name="deletemanyemployee">/hui-jxs/employee-list.jsp</result>
+    		<result name="updateemployee">/hui-jxs/employee-update.jsp</result>
+    		<result name="updatepwd">/index.jsp</result>
+    		<result name="saveemployeeinfo">/hui-jxs/welcome.jsp</result>
+    		<result name="initpwd" type="json">/hui-jxs/update-employeepwd.jsp</result>
+    		<result name="addemployee">/hui-jxs/employee-list.jsp</result>
+    		<result name="shenheemployee">/hui-jxs/employee-list.jsp</result>
+    		<result name="checkpassword">/hui-jxs/employeelogin.jsp</result>
+    		<result name="initaddemployee">/hui-jxs/employee-add.jsp</result>
+    		<result name="checkemployeeaccount" type="json">/hui-jxs/employeelogin.jsp</result>
+    		<result name="exit">/hui-jxs/employeelogin.jsp</result>
+    		<result name="initupdateemployeeloupan">/hui-jxs/employee-loupanupdate.jsp</result>
+    		<result name="updatesaveemployeeloupan">/hui-jxs/employee-list.jsp</result>
+    		<result name="sendcode" type="json">/hui-jxs/employeelogin.jsp</result>
+    	</action>
+    </package>
+</struts>

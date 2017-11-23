@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="pagePackage" namespace="/page" extends="basePackage">
+    	<action name="*" class="pageAction" method="{1}">
+    		<result name="deletepage" type="json">/hui-jxs/pagelist.jsp</result>
+    		<result name="addpage" >/hui-jxs/page.jsp</result>
+    		<result name="afterpage" >/hui-jxs/getmoney.jsp</result>
+    		<result name="pagepage">/hui-jxs/pagelist.jsp</result>
+    		<result name="deletemanypage">/hui-jxs/pagelist.jsp</result>
+    		<result name="showpage">/hui-jxs/show-page.jsp</result>
+    		<result name="checkpage" type="json">/hui-jxs/buildinfo.jsp</result>
+    	</action>
+    </package>
+</struts>

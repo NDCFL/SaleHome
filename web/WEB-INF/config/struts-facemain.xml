@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="facemainPackage" namespace="/facemain" extends="basePackage">
+    	<action name="*" class="com.ht.controller.FaceMainAction" method="{1}">
+    		<result name="articlelist">/index.jsp</result>
+    		<result name="facemaininfo">/hui-jxs/buildinginfo.jsp</result>
+    		<result name="bestloupan">/hui-jxs/bestloupan.jsp</result>
+    		<result name="othersloupan">/hui-jxs/othersloupan.jsp</result>
+    		<result name="manyarticle">/hui-jxs/manyarticle.jsp</result>
+    		<result name="findloupan">/hui-jxs/findloupan.jsp</result>
+    		<result name="houselist">/hui-jxs/findhuxing.jsp</result>
+     		<result name="houseinfo">/hui-jxs/huxinginfo.jsp</result>
+     		<result name="page">/hui-jxs/page.jsp</result>
+     		<result name="buyhouseliucheng">/hui-jxs/buyhouseliucheng.jsp</result>
+     		<result name="buyhouseliuchengtwo">/hui-jxs/buyhouseliuchengtwo.jsp</result>
+    	</action>
+    </package>
+</struts>

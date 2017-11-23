@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="hxPackage" namespace="/hx" extends="basePackage">
+    	<action name="*" class="houseAction" method="{1}">
+    		<result name="hxlist">/hui-jxs/hxlist.jsp</result>
+    		<result name="lpldlist">/hui-jxs/huxing-add.jsp</result>
+    		<result name="showhouse">/hui-jxs/huxing-show.jsp</result>
+    		<result name="updatehxstatus">/hui-jxs/hxlist.jsp</result>
+    		<result name="deletehouse">/hui-jxs/hxlist.jsp</result>
+    		<result name="addhouse">/hui-jxs/hxlist.jsp</result>
+    		<result name="pagehouse">/hui-jxs/hxlist.jsp</result>
+    		<result name="deletemanyhouse">/hui-jxs/hxlist.jsp</result>
+    		<result name="updatehouse">/hui-jxs/huxing-update.jsp</result>
+    		<result name="updatesave">/hui-jxs/hxlist.jsp</result>
+    		<result name="getloudong" type="json">/hui-jxs/huxing-add.jsp</result>
+    	</action>
+    </package>
+</struts>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="likePackage" namespace="/like" extends="basePackage">
+    	<action name="*" class="likeAction" method="{1}">
+    		<result name="deletelike" type="json">/hui-jxs/likelist.jsp</result>
+    		<result name="addlike" type="json">/hui-jxs/likelist.jsp</result>
+    		<result name="pagelike">/hui-jxs/likelist.jsp</result>
+    		<result name="deletemanylike">/hui-jxs/likelist.jsp</result>
+    		<result name="checklike" type="json">/hui-jxs/buildinfo.jsp</result>
+    	</action>
+    </package>
+</struts>

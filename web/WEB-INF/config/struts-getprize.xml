@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="getprizePackage" namespace="/getprize" extends="basePackage">
+    	<action name="*" class="getPrizeAction" method="{1}">
+    		<result name="pagegetprize">/hui-jxs/getprize-list.jsp</result>
+    		<result name="deletegetprize">/hui-jxs/getprizecustomer-list.jsp</result>
+    		<result name="addgetprize" type="json">/hui-jxs/getprize-list.jsp</result>
+    		<result name="updategetprizestatus">/hui-jxs/getprizecustomer-list.jsp</result>
+    		<result name="pagecustomerprize">/hui-jxs/getprizecustomer-list.jsp</result>
+    	</action>
+    </package>
+</struts>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="lpPackage" namespace="/lp" extends="basePackage">
+    	<action name="*" class="louPanAction" method="{1}">
+    		<result name="loupanlist">/hui-jxs/lplist.jsp</result>
+    		<result name="showloupan">/hui-jxs/loupan-show.jsp</result>
+    		<result name="updatelpstatus">/hui-jxs/lplist.jsp</result>
+    		<result name="deletelpstatus">/hui-jxs/lplist.jsp</result>
+    		<result name="addloupan">/hui-jxs/lplist.jsp</result>
+    		<result name="fileUpload">/hui-jxs/lplist.jsp</result>
+    		<result name="list" type="json"></result>
+    		<result name="baobiao" type="json"></result>
+    		<result name="pageloupan">/hui-jxs/lplist.jsp</result>
+    		<result name="deletemanyloupan">/hui-jxs/lplist.jsp</result>
+    		<result name="updateloupan">/hui-jxs/loupan-update.jsp</result>
+    		<interceptor-ref name="fileUpload">
+				<!-- 允许上传的文件类型  -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!--上传文件的最大容量 单位字节  -->
+				<param name="maximumSize">20000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+    	</action>
+    </package>
+</struts>

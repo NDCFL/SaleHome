@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="wzPackage" namespace="/wz" extends="basePackage">
+    	<action name="*" class="articleAction" method="{1}">
+    		<result name="upfile">/hui-jxs/article-list.jsp</result>
+    		<result name="pagearticle">/hui-jxs/article-list.jsp</result>
+    		<result name="updasavetearticle">/hui-jxs/article-list.jsp</result>
+    		<result name="initupdatearticle">/hui-jxs/article-update.jsp</result>
+    		<result name="initaddarticle">/hui-jxs/article-add.jsp</result>
+    		<result name="allarticlelist">/hui-jxs/article-jxsallist.jsp</result>
+    		<result name="deletearticle">/hui-jxs/article-list.jsp</result>
+    		<result name="updatearticlestatus">/hui-jxs/article-list.jsp</result>
+    	</action>
+    </package>
+</struts>

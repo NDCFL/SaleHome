@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="commentPackage" namespace="/comment" extends="basePackage">
+    	<action name="*" class="commentAction" method="{1}">
+    		<result name="deletecomment" type="json">/hui-jxs/commentlist.jsp</result>
+    		<result name="addcomment" type="json">/hui-jxs/commentlist.jsp</result>
+    		<result name="pagecomment">/hui-jxs/commentlist.jsp</result>
+    		<result name="deletemanycomment">/hui-jxs/commentlist.jsp</result>
+    		<result name="checkcomment" type="json">/hui-jxs/buildinfo.jsp</result>
+    		<result name="updatecommentstatus"  type="json">/hui-jxs/commentlist.jsp</result>
+    	</action>
+    </package>
+</struts>

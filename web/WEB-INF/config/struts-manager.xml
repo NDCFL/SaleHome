@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="managerPackage" namespace="/manager" extends="basePackage">
+    	<action name="*" class="managerAction" method="{1}">
+    		<result name="managerlist">/hui-jxs/managerlist.jsp</result>
+    		<result name="userlist">/hui-jxs/manager-add.jsp</result>
+    		<result name="showmanager">/hui-jxs/manager-show.jsp</result>
+    		<result name="updatemanagerstatus">/hui-jxs/managerlist.jsp</result>
+    		<result name="deletemanager">/hui-jxs/managerlist.jsp</result>
+    		<result name="addmanager">/hui-jxs/managerlist.jsp</result>
+    		<result name="pagemanager">/hui-jxs/managerlist.jsp</result>
+    		<result name="deletemanymanager">/hui-jxs/managerlist.jsp</result>
+    		<result name="updatemanager">/hui-jxs/manager-update.jsp</result>
+    		<result name="checkmanageraccount">/hui-jxs/manager-update.jsp</result>
+    		<result name="checkregisteraccount" type="json"></result>
+    		<result name="checkpassword" type="json"></result>
+    		<result name="loginsuccess">/hui-jxs/managerindex.jsp</result>
+    		<result name="managermainface">/hui-jxs/managerindex.jsp</result>
+    		<result name="managerregister">/hui-jxs/managerindex.jsp</result>
+    		<result name="initpwd" type="json">/hui-jxs/update-managerpwd.jsp</result>
+    		<result name="updatemanagerpwd" type="json">/hui-jxs/update-managerpwd.jsp</result>
+    		<result name="checkuseraccount" type="json"></result>
+    		<result name="exit">/hui-jxs/managerlogin.jsp</result>
+    		<result name="sendcode"  type="json"></result>
+    		<result name="checkcode"  type="json"></result>
+    		<result name="updatesavemanager">/hui-jxs/manager-show.jsp</result>
+    		<result name="changevip" type="json">/hui-jxs/manager-vip.jsp</result>
+    		<result name="vip">/hui-jxs/manager-vip.jsp</result>
+    		<result name="shenhemanager">/hui-jxs/managerlist.jsp</result>
+    		<result name="pagearticle">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="initaddarticle">/hui-jxs/manager-articleadd.jsp</result>
+    		<result name="upfile">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="initupdatearticle">/hui-jxs/managerarticle-update.jsp</result>
+    		<result name="updasavetearticle">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="deletearticle">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="deletemanyarticle">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="updatearticlestatus">/hui-jxs/manager-articlelist.jsp</result>
+    		<result name="findpwd" type="json"></result>
+    	</action>
+    </package>
+</struts>

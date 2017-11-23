@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.ht.pojo.TPage" table="t_page" catalog="sshproject">
+		<id name="idString" type="java.lang.String">
+			<column name="id_string" length="36" />
+			<generator class="uuid" />
+		</id>
+		<property name="q1_1" type="java.lang.String">
+			<column name="q1_1" length="20" />
+		</property>
+		<property name="q1_2" type="java.lang.String">
+			<column name="q1_2" length="20" />
+		</property>
+		<property name="q1_3" type="java.lang.String">
+			<column name="q1_3" length="20" />
+		</property>
+		<property name="q2" type="java.lang.Integer">
+			<column name="q2" />
+		</property>
+		<property name="q3" type="java.lang.String">
+			<column name="q3" />
+		</property>
+		<property name="q4" type="java.lang.Integer">
+			<column name="q4" />
+		</property>
+		<property name="q5" type="java.lang.Integer">
+			<column name="q5" />
+		</property>
+		<property name="q6" type="java.lang.Integer">
+			<column name="q6" />
+		</property>
+		<property name="q7" type="java.lang.String">
+			<column name="q7" />
+		</property>
+		<property name="q8" type="java.lang.Integer">
+			<column name="q8" />
+		</property>
+		<property name="q9" type="java.lang.String">
+			<column name="q9" length="20" />
+		</property>
+		<property name="q10" type="java.lang.String">
+			<column name="q10" length="20" />
+		</property>
+		<property name="q11" type="java.lang.String">
+			<column name="q11" length="20" />
+		</property>
+		<property name="q12" type="java.lang.String">
+			<column name="q12" />
+		</property>
+		<property name="q13" type="java.lang.String">
+			<column name="q13" />
+		</property>
+		<property name="q14" type="java.lang.Integer">
+			<column name="q14" />
+		</property>
+		<property name="q15" type="java.lang.Integer">
+			<column name="q15" />
+		</property>
+		<property name="q16" type="java.lang.String">
+			<column name="q16" />
+		</property>
+		<property name="q17" type="java.lang.String">
+			<column name="q17" />
+		</property>
+		<property name="q18" type="java.lang.String">
+			<column name="q18" />
+		</property>
+		<property name="q19" type="java.lang.String">
+			<column name="q19" />
+		</property>
+		<property name="q20" type="java.lang.String">
+			<column name="q20" />
+		</property>
+		<property name="q21" type="java.lang.Integer">
+			<column name="q21" />
+		</property>
+		<property name="q22" type="java.lang.String">
+			<column name="q22" />
+		</property>
+		<property name="q23" type="java.lang.String">
+			<column name="q23" />
+		</property>
+		<property name="q24" type="java.lang.Integer">
+			<column name="q24" />
+		</property>
+		<property name="q25" type="java.lang.String">
+			<column name="q25" />
+		</property>
+		<property name="q26" type="java.lang.String">
+			<column name="q26" />
+		</property>
+		<property name="q27" type="java.lang.String">
+			<column name="q27" />
+		</property>
+		<property name="q28" type="java.lang.String">
+			<column name="q28" />
+		</property>
+		<property name="q29" type="java.lang.Integer">
+			<column name="q29" />
+		</property>
+		<property name="q30" type="java.lang.Integer">
+			<column name="q30" />
+		</property>
+		<property name="q31" type="java.lang.Integer">
+			<column name="q31" />
+		</property>
+		<property name="q32" type="java.lang.Integer">
+			<column name="q32" />
+		</property>
+		<property name="useridString" type="java.lang.String">
+			<column name="user_id_string" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="salePackage" namespace="/sale" extends="basePackage">
+    	<action name="*" class="saleAction" method="{1}">
+    		<result name="salelist">/hui-jxs/salelist.jsp</result>
+    		<result name="showsale">/hui-jxs/sale-info.jsp</result>
+    		<result name="deletesale">/hui-jxs/salelist.jsp</result>
+    		<result name="initaddsale">/hui-jxs/sale-add.jsp</result>
+    		<result name="saveaddsale">/hui-jxs/salelist.jsp</result>
+    		<result name="pagesale">/hui-jxs/salelist.jsp</result>
+    		<result name="deletemanysale">/hui-jxs/salelist.jsp</result>
+    		<result name="updatesalestatus">/hui-jxs/sale-update.jsp</result>
+    		<result name="updatesavesale">/hui-jxs/salelist.jsp</result>
+    		<result name="updatesale">/hui-jxs/shenhesale-list.jsp</result>
+    		<result name="ruzhu">/hui-jxs/saletojxsjd.jsp</result>
+    		<result name="shenhesale">/hui-jxs/sale-shenhe.jsp</result>
+    		<result name="savesaleinfo">/hui-jxs/sale-show.jsp</result>
+    		<result name="shenhelist">/hui-jxs/shenhesale-list.jsp</result>
+    		<result name="baobiao" type="json">/hui-jxs/sale-baobiao.jsp</result>
+    		<result name="upfact">/hui-jxs/salelist.jsp</result>
+    	</action>
+    </package>
+</struts>

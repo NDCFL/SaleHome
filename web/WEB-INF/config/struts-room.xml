@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="roomPackage" namespace="/room" extends="basePackage">
+    	<action name="*" class="roomAction" method="{1}">
+    		<result name="roomlist">/hui-jxs/roomlist.jsp</result>
+    		<result name="ldhxlist">/hui-jxs/room-add.jsp</result>
+    		<result name="showroom">/hui-jxs/room-show.jsp</result>
+    		<result name="updateroomstatus">/hui-jxs/roomlist.jsp</result>
+    		<result name="deleteroom">/hui-jxs/roomlist.jsp</result>
+    		<result name="addroom">/hui-jxs/roomlist.jsp</result>
+    		<result name="pageroom">/hui-jxs/roomlist.jsp</result>
+    		<result name="deletemanyroom">/hui-jxs/roomlist.jsp</result>
+    		<result name="updateroom">/hui-jxs/room-update.jsp</result>
+    		<result name="gethouselist" type="json">/hui-jxs/room-add.jsp</result>
+    	</action>
+    </package>
+</struts>

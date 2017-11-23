@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="lpimgPackage" namespace="/lpimg" extends="basePackage">
+    	<action name="*" class="louPanImgAction" method="{1}">
+    		<result name="fileUpload">/hui-jxs/lpimglist.jsp</result>
+    		<result name="imglist">/hui-jxs/lpimglist.jsp</result>
+    		<result name="deleteimg">/hui-jxs/lpimglist.jsp</result>
+    		<result name="deletemanyloupanimg">/hui-jxs/lpimglist.jsp</result>
+    		<result name="deletemanyimg">/hui-jxs/lpimg-show.jsp</result>
+    		<result name="pageloupanimg">/hui-jxs/lpimglist.jsp</result>
+    		<result name="initaddloupanimg">/hui-jxs/lpimg-add.jsp</result>
+    		<result name="addloupanimg">/hui-jxs/lpimglist.jsp</result>
+    		<result name="showloupanimg">/hui-jxs/lpimg-show.jsp</result>
+    		<interceptor-ref name="fileUpload">
+				<!-- 允许上传的文件类型  -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!--上传文件的最大容量 单位字节  -->
+				<param name="maximumSize">20000000</param>
+			</interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+    	</action>
+    </package>
+</struts>

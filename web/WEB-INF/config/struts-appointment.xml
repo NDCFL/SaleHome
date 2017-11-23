@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="appointmentPackage" namespace="/appointment" extends="basePackage">
+    	<action name="*" class="appointmentAction" method="{1}">
+    		<result name="deleteappointment" type="json">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="addappointment" type="json">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="pageappointment">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="deletemanyappointment">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="updateappointment">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="updateuserappointment">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="updateappointmentstatus">/hui-jxs/appointmentlist.jsp</result>
+    		<result name="initappointment">/hui-jxs/updateappointment.jsp</result>
+    		<result name="pagejxsappointment">/hui-jxs/appointmentjxslist.jsp</result>
+    		<result name="pageuserappointment">/hui-jxs/appointmentuserlist.jsp</result>
+    		<result name="buyhouse">/hui-jxs/buyhouse-list.jsp</result>
+    		<result name="querenbuy">/hui-jxs/buyhouse-list.jsp</result>
+    	</action>
+    </package>
+</struts>

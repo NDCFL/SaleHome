@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="activityPackage" namespace="/activity" extends="basePackage">
+    	<action name="*" class="activityAction" method="{1}">
+    		<result name="deleteactivity" type="json">/hui-jxs/activitylist.jsp</result>
+    		<result name="addactivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="pageactivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="pagemanageractivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="deletemanyactivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="initupdateactivity">/hui-jxs/activity-update.jsp</result>
+    		<result name="deleteactivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="updateactivitystatus">/hui-jxs/activitylist.jsp</result>
+    		<result name="updatesaveactivity">/hui-jxs/activitylist.jsp</result>
+    		<result name="initaddactivity">/hui-jxs/activity-add.jsp</result>
+    		<result name="upfile">/hui-jxs/activitylist.jsp</result>
+    	</action>
+    </package>
+</struts>

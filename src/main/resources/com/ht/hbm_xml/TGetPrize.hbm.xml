@@ -1,0 +1,24 @@
+<?xml version="1.0"?>    
+<!DOCTYPE hibernate-mapping PUBLIC     
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"    
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">       
+<hibernate-mapping>
+    <class name="com.ht.pojo.TGetPrize" table="t_getprize" >
+        <id name="idString" type="string">
+            <column name="id_string" length="36" />
+            <generator class="uuid" />
+        </id>
+        <property name="useridString" type="string">
+            <column name="user_id_string" length="36"/>
+        </property>
+        <property name="prizenameString" type="string">
+            <column name="prize_name_string" length="36" />
+        </property>
+        <property name="prizetypeInt" type="int">
+            <column name="prize_type_int" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="create_time" />
+        </property>
+    </class>
+</hibernate-mapping>

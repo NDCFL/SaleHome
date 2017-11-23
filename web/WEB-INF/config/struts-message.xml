@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="messagePackage" namespace="/message" extends="basePackage">
+    	<action name="*" class="messageAction" method="{1}">
+    		<result name="messagelist">/hui-jxs/messagelist.jsp</result>
+    		<result name="userlist">/hui-jxs/message-add.jsp</result>
+    		<result name="showmessage">/hui-jxs/message-show.jsp</result>
+    		<result name="updatemessagestatus">/hui-jxs/messagelist.jsp</result>
+    		<result name="deletemessage">/hui-jxs/messagelist.jsp</result>
+    		<result name="addmessage">/hui-jxs/messagelist.jsp</result>
+    		<result name="pagemessage">/hui-jxs/messagelist.jsp</result>
+    		<result name="deletemanymessage">/hui-jxs/messagelist.jsp</result>
+    		<result name="updatemessage">/hui-jxs/message-update.jsp</result>
+    	</action>
+    </package>
+</struts>

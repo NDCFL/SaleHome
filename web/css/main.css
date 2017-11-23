@@ -1,0 +1,65 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	list-style:none;
+}
+
+a:link,a:visited {
+	text-decoration:none;
+	color:black;
+}
+
+a:active {
+	text-decoration:none;
+	color:green;
+}
+
+a:hover {
+	text-decoration:none;
+	color:blue;
+}
+
+.clear {
+	clear:both;
+}
+
+.normal_win {
+	width:400px;
+	height:300px;
+}
+
+.small_win {
+	width:300px;
+	height:200px;
+}
+
+.large_win {
+	width:600px;
+	height:500px;
+}
+
+#top {
+	height:60px;
+	border:none;
+}
+
+#logo {
+	width:200px;
+	height:60px;
+	float:left;
+	transition: all 2s;
+}
+#logo:hover{
+	trnsform: rotate(1080deg);
+}
+
+
+#wel_msg {
+	float:right;
+	height:45px;
+	line-height:45px;
+	margin-right:20px;
+}

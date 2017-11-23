@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="lrPackage" namespace="/lr" extends="basePackage">
+    	<action name="*" class="com.ht.controller.Login_RegirestAction" method="{1}">
+    		<result name="gotoregirest">/WEB-INF/face/zc.jsp</result>
+    		<result name="checkuseraccount" type="json"></result>
+    		<result name="password" type="json"></result>
+    		<result name="loginsuccess">/index.jsp</result>
+    		<result name="exit">/index.jsp</result>
+    		<result name="jxsmainface">/hui-jxs/index.jsp</result>
+    		<result name="usermainface">/hui-jxs/userindex.jsp</result>
+    		<result name="jxsregister">/index.jsp</result>
+    		<result name="checkregisteraccount" type="json"></result>
+    		<result name="sendcode"  type="json"></result>
+    		<result name="regssendcode"  type="json"></result>
+    		<result name="checkcode"  type="json"></result>
+    		<result name="login" type="json">/index.jsp</result>
+    		<result name="main">/index.jsp</result>
+			<result name="findpwd">/hui-jxs/userlogin.jsp</result>
+    	</action>
+    </package>
+</struts>

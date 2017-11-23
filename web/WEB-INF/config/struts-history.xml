@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="historyPackage" namespace="/history" extends="basePackage">
+    	<action name="*" class="historyAction" method="{1}">
+    		<result name="deletehistory">/hui-jxs/historylist.jsp</result>
+    		<result name="addhistory">/hui-jxs/historylist.jsp</result>
+    		<result name="pagehistory">/hui-jxs/historylist.jsp</result>
+    		<result name="deletemanyhistory">/hui-jxs/historylist.jsp</result>
+    		<result name="baobiao" type="json">/hui-jxs/history-baobiao.jsp</result>
+    	</action>
+    </package>
+</struts>

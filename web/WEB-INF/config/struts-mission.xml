@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="missionPackage" namespace="/mission" extends="basePackage">
+    	<action name="*" class="missionAction" method="{1}">
+    		<result name="pagemission">/hui-jxs/mission-list.jsp</result>
+    		<result name="updatesavemission">/hui-jxs/mission-list.jsp</result>
+    		<result name="initupdatemission">/hui-jxs/mission-update.jsp</result>
+    		<result name="initaddmission">/hui-jxs/mission-add.jsp</result>
+    		<result name="deletemission">/hui-jxs/mission-list.jsp</result>
+    		<result name="addsavemission">/hui-jxs/mission-list.jsp</result>
+    		<result name="updatemissionstatus">/hui-jxs/mission-list.jsp</result>
+    		<result name="deletemission">/hui-jxs/mission-list.jsp</result>
+    		<result name="deletemanymission">/hui-jxs/mission-list.jsp</result>
+    	</action>
+    </package>
+</struts>

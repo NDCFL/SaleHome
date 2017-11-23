@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="userPackage" namespace="/user" extends="basePackage">
+    	<action name="*" class="userAction" method="{1}">
+    		<result name="userlist">/hui-jxs/userlist.jsp</result>
+    		<result name="showuser">/hui-jxs/user-show.jsp</result>
+    		<result name="deleteuser">/hui-jxs/userlist.jsp</result>
+    		<result name="adduser">/hui-jxs/userlist.jsp</result>
+    		<result name="pageuser">/hui-jxs/userlist.jsp</result>
+    		<result name="deletemanyuser">/hui-jxs/userlist.jsp</result>
+    		<result name="updateuser">/hui-jxs/user-update.jsp</result>
+    		<result name="updatesaveuser">/hui-jxs/userlist.jsp</result>
+    		<result name="shenqingjxs">/hui-jxs/usertojxs.jsp</result>
+    		<result name="ruzhu">/hui-jxs/usertojxsjd.jsp</result>
+    		<result name="saveuserinfo">/hui-jxs/user-show.jsp</result>
+    		<result name="tojxstwo">/hui-jxs/user-show.jsp</result>
+    		<result name="updateuserpwd" type="json"></result>
+    		<result name="initpwd" type="json">/hui-jxs/update-userpwd.jsp</result>
+    	</action>
+    </package>
+</struts>

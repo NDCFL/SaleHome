@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="customerPackage" namespace="/customer" extends="basePackage">
+    	<action name="*" class="customerAction" method="{1}">
+    		<result name="customerlist">/hui-jxs/customerlist.jsp</result>
+    		<result name="showcustomer">/hui-jxs/customer-show.jsp</result>
+    		<result name="deletecustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="addcustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="pagecustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="mybuyhouse">/hui-jxs/mybuyhouse-list.jsp</result>
+    		<result name="pagejxscustomer">/hui-jxs/customerjxslist.jsp</result>
+    		<result name="deletemanycustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="updatecustomerstatus">/hui-jxs/customer-update.jsp</result>
+    		<result name="updatesavecustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="shenqingjxs">/hui-jxs/customertojxs.jsp</result>
+    		<result name="ruzhu">/hui-jxs/customertojxsjd.jsp</result>
+    		<result name="savecustomerinfo">/hui-jxs/customer-show.jsp</result>
+    		<result name="updatecustomer">/hui-jxs/customerlist.jsp</result>
+    		<result name="updatecustomerpwd" type="json"></result>
+    		<result name="addcomment">/hui-jxs/mybuyhouse-list.jsp</result>
+    		<result name="mybuyhouseinfo">/hui-jxs/mybyhouseinfo-show.jsp</result>
+    		<result name="pagecustomerprize">/hui-jxs/getprizecustomer-list.jsp</result>
+    		<result name="initpwd" type="json">/hui-jxs/update-customerpwd.jsp</result>
+    	</action>
+    </package>
+</struts>

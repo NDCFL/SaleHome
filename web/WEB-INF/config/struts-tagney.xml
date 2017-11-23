@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="jxsPackage" namespace="/jxs" extends="basePackage">
+    	<action name="*" class="tAgneyAction" method="{1}">
+    		<result name="jxslist">/hui-jxs/jxs-list.jsp</result>
+    		<result name="showjxs">/hui-jxs/jxs-show.jsp</result>
+    		<result name="updatejxsstatus">/hui-jxs/jxs-show.jsp</result>
+    		<result name="deletejxs">/hui-jxs/jxs-list.jsp</result>
+    		<result name="pagejxs">/hui-jxs/jxs-list.jsp</result>
+    		<result name="deletemanyjxs">/hui-jxs/jxs-list.jsp</result>
+    		<result name="updatejxs">/hui-jxs/jxs-update.jsp</result>
+    		<result name="updatepwd">/index.jsp</result>
+    		<result name="initpwd" type="json">/hui-jxs/update-jxspwd.jsp</result>
+    		<result name="addtagency">/hui-jxs/jxs-show.jsp</result>
+    		<result name="shenhejxs">/hui-jxs/jxs-list.jsp</result>
+    		<result name="sousuo">/hui-jxs/jxs-list.jsp</result>
+    		<result name="uplogo">/hui-jxs/welcome.jsp</result>
+    		<result name="inituplogo">/hui-jxs/up-logo.jsp</result>
+    		<result name="findmylogo">/hui-jxs/my-logo.jsp</result>
+    		<result name="updatejxscheckedStatusInt">/hui-jxs/jxs-show.jsp</result>
+    	</action>
+    </package>
+</struts>
