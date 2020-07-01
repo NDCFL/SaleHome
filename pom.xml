@@ -33,7 +33,7 @@
     </repositories>
 
     <properties>
-        <mysql-version>5.1.42</mysql-version>
+        <mysql-version>8.0.16</mysql-version>
         <struts-version>2.3.32</struts-version>
         <spring-version>4.3.9.RELEASE</spring-version>
         <aspectj-version>1.8.10</aspectj-version>
