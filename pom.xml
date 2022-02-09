@@ -37,7 +37,7 @@
         <struts-version>2.3.32</struts-version>
         <spring-version>4.3.9.RELEASE</spring-version>
         <aspectj-version>1.8.10</aspectj-version>
-        <hibernate-version>5.2.9.Final</hibernate-version>
+        <hibernate-version>5.4.24.Final</hibernate-version>
         <log4j-version>1.2.17</log4j-version>
         <proxool-version>0.9.1</proxool-version>
         <junit-version>4.12</junit-version>
